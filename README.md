@@ -25,7 +25,7 @@ yarn test
 ```
 
 I used bootstrap css to handle things like the adaptive css on texts(truncating on smaller screens).
-If this was a large project i would have used react/redux instead of react context for easier flow and management with state
+If this was a large project i would have used react/redux instead of react context for easier flow and management with state also testing is easier.
 
 @TODO if it was required
 - Write more tests

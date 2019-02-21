@@ -80,6 +80,7 @@ const Places = () => {
 
   return (
     <div className="container mt-5">
+      <b>{PlacesData.length} Items</b>
       <div className="row">
         {PlacesData.map((place, key) => renderPlaces(place))}
       </div>
