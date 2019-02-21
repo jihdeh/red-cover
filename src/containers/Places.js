@@ -65,7 +65,13 @@ const Places = () => {
             <div className="p-0 col-xs col-sm col-md col-lg col-xl text-truncate">
               <b>{place.imageName}</b>
             </div>
-            <p>in {place.datasetName} </p>
+            <p className="mb-0">in {place.datasetName} </p>
+          </div>
+          <div className="place--more-info">
+            <div className="d-flex px-2 justify-content-between">
+            <p className="mb-0">{place.createdAt}</p>
+            <p className="mb-0">{place.size}</p>
+          </div>
           </div>
         </div>
       </div>

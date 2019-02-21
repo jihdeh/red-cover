@@ -25,7 +25,6 @@ body {
   padding: 5px 10px;
 }
 
-
 .place {
   &--container {
     background: $color_white;
@@ -40,6 +39,9 @@ body {
   }
   &--action-detail {
     display: none;
+  }
+  &--more-info {
+    visibility: hidden;
   }
   &--detail {
     padding: 10px;
@@ -99,20 +101,24 @@ body {
 }
 
 //place hover active states
-.place--container-active,
-.place--container:hover {
-  background-color: #80818e;
-  color: $color_white;
-}
-
-.place--container-active img,
-.place--container:hover img {
-  filter: brightness(50%);
-}
-
-.place--container-active .place--action-detail,
-.place--container:hover .place--action-detail {
-  display: block;
+.place--container {
+  &-active,
+  &:hover {
+    background-color: #80818e;
+    color: $color_white;
+  }
+  &-active img,
+  &:hover img {
+    filter: brightness(50%);
+  }
+  &-active .place--action-detail,
+  &:hover .place--action-detail {
+    display: block;
+  }
+  &-active .place--more-info,
+  &:hover .place--more-info {
+    visibility: visible;
+  }
 }
 
 .selection--action--container {
