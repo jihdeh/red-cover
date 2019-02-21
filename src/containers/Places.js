@@ -63,7 +63,7 @@ const Places = () => {
           />
           <div className="place--detail">
             <div className="p-0 col-xs col-sm col-md col-lg col-xl text-truncate">
-              <b>{place.imageName}</b>
+              <b className="place--detail-name">{place.imageName}</b>
             </div>
             <p className="mb-0">in {place.datasetName} </p>
           </div>
