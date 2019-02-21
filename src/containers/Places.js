@@ -6,7 +6,6 @@ import PlacesData from "../PlacesData";
 import {
   faEllipsisH
 } from "@fortawesome/free-solid-svg-icons";
-// ellipsis-h
 
 function handleChange({ target }, { updateState, state: contextState }) {
   const placeName = target.name;
