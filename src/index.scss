@@ -25,15 +25,30 @@ body {
   padding: 5px 10px;
 }
 
+.place--container-active {
+  background-color: #80818e;
+  color: $color_white;
+  img {
+    filter: brightness(50%);
+  }
+  .place--action-detail {
+    display: block;
+  }
+}
+
 .place {
   &--container {
     background: $color_white;
     border: 1px solid #bababa63;
     margin-bottom: 20px;
     cursor: pointer;
-    &:hover > img {
+    &:hover img {
       filter: brightness(50%);
     }
+    &:hover .place--action-detail {
+      display: block;
+    }
+
     &:hover {
       background-color: #80818e;
       color: $color_white;
@@ -43,6 +58,9 @@ body {
     height: 150px;
     border-bottom-left-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
+  }
+  &--action-detail {
+    display: none;
   }
   &--detail {
     padding: 10px;
