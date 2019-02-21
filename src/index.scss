@@ -125,37 +125,35 @@ body {
   background: #80818e6b;
 }
 
-/*http://jsfiddle.net/sct3j/283/*/
-/*to create a bootstrap style 5 column row*/
-.col-xs-5ths,
-.col-sm-5ths,
-.col-md-5ths,
-.col-lg-5ths {
+.col-xs-5g,
+.col-sm-5g,
+.col-md-5g,
+.col-lg-5g {
   position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.col-xs-5ths {
+.col-xs-5g {
   width: 20%;
   float: left;
 }
 
 @media (min-width: 768px) {
-  .col-sm-5ths {
+  .col-sm-5g {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 992px) {
-  .col-md-5ths {
+  .col-md-5g {
     width: 20%;
     float: left;
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-5ths {
+  .col-lg-5g {
     width: 20%;
     float: left;
     flex: inherit;

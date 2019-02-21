@@ -32,7 +32,7 @@ const Places = () => {
     return (
       <div
         key={place.imageName}
-        className=" col-xs-6 col-sm-4 col-md-5ths col-lg-5ths"
+        className=" col-xs-6 col-sm-4 col-md-5g col-lg-5g"
       >
         <div className={`d-flex flex-column ${hasPlaceSelectedClass}`}>
           <div className="place--action-detail">
