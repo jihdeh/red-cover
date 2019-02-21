@@ -25,16 +25,6 @@ body {
   padding: 5px 10px;
 }
 
-.place--container-active {
-  background-color: #80818e;
-  color: $color_white;
-  img {
-    filter: brightness(50%);
-  }
-  .place--action-detail {
-    display: block;
-  }
-}
 
 .place {
   &--container {
@@ -42,17 +32,6 @@ body {
     border: 1px solid #bababa63;
     margin-bottom: 20px;
     cursor: pointer;
-    &:hover img {
-      filter: brightness(50%);
-    }
-    &:hover .place--action-detail {
-      display: block;
-    }
-
-    &:hover {
-      background-color: #80818e;
-      color: $color_white;
-    }
   }
   &--img {
     height: 150px;
@@ -117,6 +96,23 @@ body {
     left: 30%;
     top: 30%;
   }
+}
+
+//place hover active states
+.place--container-active,
+.place--container:hover {
+  background-color: #80818e;
+  color: $color_white;
+}
+
+.place--container-active img,
+.place--container:hover img {
+  filter: brightness(50%);
+}
+
+.place--container-active .place--action-detail,
+.place--container:hover .place--action-detail {
+  display: block;
 }
 
 .selection--action--container {
