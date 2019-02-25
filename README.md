@@ -1,5 +1,3 @@
-#Rediscovery assesment
-
 There are two wasys to get started
 
 If you have docker you can run
